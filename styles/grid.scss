@@ -4,13 +4,11 @@
   grid-gap: 20px; /* Spacing between items */
   margin: 20px; /* Outer spacing for the grid */
 }
-
 .grid-item {
   border: 1px solid #ddd; /* Example border */
   padding: 10px; /* Padding inside items */
   text-align: center; /* Centering the text */
 }
-
 .grid-item img {
   max-width: 100%; /* Ensuring image doesn't overflow its container */
   height: auto; /* Keeping the aspect ratio of the image */
@@ -32,5 +30,3 @@
 .category-item h2 {
   margin: 8px 0;
 }
-
-/*# sourceMappingURL=styles.css.map */
