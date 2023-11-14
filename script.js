@@ -13,8 +13,9 @@ fetch("https://vef1-2023-h2-api-791d754dda5b.herokuapp.com/products?limit=6")
 
       // Adjust the property names according to your actual API response
       gridItem.innerHTML = `
-        <h3>${item.title}</h3>
+        
         <img src="${item.image}" alt="${item.title}">
+        <h3>${item.title}</h3>
         <p>Price: ${item.price} kr-</p>
         <p>Category: ${item.category_title}</p>
       `;
