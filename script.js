@@ -4,7 +4,7 @@ fetch("https://vef1-2023-h2-api-791d754dda5b.herokuapp.com/products?limit=6")
     const gridContainer = document.getElementById("grid-container");
 
     // Check if 'data' itself is an array or if it has an 'items' property that is an array
-    const items = Array.isArray(data) ? data : (data.items || []);
+    const items = Array.isArray(data) ? data : data.items || [];
 
     // Now iterate over 'items'
     items.forEach((item) => {
@@ -15,8 +15,8 @@ fetch("https://vef1-2023-h2-api-791d754dda5b.herokuapp.com/products?limit=6")
       gridItem.innerHTML = `
         <h3>${item.title}</h3>
         <img src="${item.image}" alt="${item.title}">
-        <p>Price: ${item.price}</p>
-        <p>Category: ${item.category}</p>
+        <p>Price: ${item.price} kr-</p>
+        <p>Category: ${item.category_title}</p>
       `;
 
       gridContainer.appendChild(gridItem);
