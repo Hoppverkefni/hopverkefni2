@@ -3,248 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles.css">
-    
-    <title>Nýjar Vörur</title>
+    <title>Product Details - Vefforritunarbúðin</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
 </head>
+<body>
 
-<body class="otherpage">
-    <div class="nav-container">
-        <nav class="navigation">
-            <div class="logo-container">
-                <img class="logo" src="/img/logo.svg" />
-                <div class="logo-text"><a href="/index.html">Tæknibúðin</a></div>
-            </div>
-            <div class="search-categories">
-                <div class="search">
-                    <img class="vector" src="/img/vector.svg" />
-                    <input class="search-input" placeholder="Leit eftir heiti, vörunúmeri, lýsingu o.fl.">
-                    </input>
-                </div>
-                <div class="categories">
-                    <div class="nav-links"><a href="/sidur/vorulisti.html">Nýjar vörur</a></div>
-                    <div class="nav-links"><a href="/sidur/vara.html">Tilboðs vörur</a></div>
-                    <div class="nav-links"><a href="/sidur/pontun.html">Allar vörur</a></div>
-                </div>
-            </div>
-            <div class="cart">
-                <a href="/sidur/pontun.html">
-                    <img class="cart-icon" src="/img/cart-icon.svg" />
-                    <div class="cart-count"></div>
-                    <div class="label">
-                        <div class="text-wrapper">1</div>
-                    </div>
-                </a>
-            </div>
-            
-        </nav>
-    </div>
- 
-    <main class="main-content">
-        <p class="Nyjarvorur">Nýjar vörur</p>
+    <header class="header">
+        <div class="title">Vefforritunarbúðin</div>
+        <div class="buttons">
+            <button class="button" href="/index.html">Heimasida</button>
+            <button class="button"></>Nýskrá</button>
+            <button class="button">Innskrá</button>
+            <button class="button">Karfa</button>
+            <button class="button">Nýjar vörur</button>
+            <button class="button">Flokkar</button>
+        </div> 
+    </header>
 
-        <p class="Rada_eftir" >Raða eftir:</p>
-        <!--Raða eftir heiti, lægsta verð, hæsta verð, vinsældum, afslætti-->
-        <div class="Tags">
-            <p class = "TAG">Heiti</p>
-            <p class = "TAG">Lægsta verði</p>
-            <p class = "TAG">Hæsta verði</p>
-            <p class = "TAG">Vinsældum</p>
-            <p class = "TAG">Afslætti</p>
-        </div>
-        
-        <section class="tolf-box" >
-            <div class="robot">
-                <div class="Robot-mynd">
-                    <img src="../img/Robot.png" alt="Robot Mynd">
-                </div>
-                <div class="vinarlegur-vinnurobot">Vinalegur vinnuróbot</div>
-                <div class="tags">
-                    <span class="tag">Nýtt</span>
-                    <span class="tag">Ekki fyrir börn</span>
-                </div>
-                <div class="verd">1.499.990 kr.</div>
-                <a class="vorutakki" href="sidur/pontun.html">SETJA Í KÖRFU</a>
+    <main>
+        <section id="product-detail">
+            <!-- Product details will be added here dynamically -->
+        </section>
+
+        <section id="similar-products">
+            <h2>Sambærilegar Vörur</h2>
+            <div id="similar-products-grid">
+                <!-- Similar products will be added here -->
             </div>
-
-            <div class="modurbord">
-                <div class="Robot-mynd">
-                    <img src="../img/Motherboard.png" alt="Modurbord Mynd">
-                </div>
-                <div class="vinarlegur-vinnurobot">Tæknilegt Móðurborð</div>
-                <div class="tags">
-                    <span class="tag">Nýtt</span>
-                    <span class="tag">Takmarkað Magn</span>
-                </div>
-                <div class="verd">189.000 kr</div>
-                <a class="vorutakki" href="sidur/pontun.html">SETJA Í KÖRFU</a>
-            </div>
-
-            <div class="matrix">
-                <div class="Robot-mynd">
-                    <img src="../img/Matrix.png" alt="Matrix Mynd">
-                </div>
-                <div class="vinarlegur-vinnurobot">Matrixið</div>
-                <div class="tags">
-                    <span class="tag">Nýtt</span>
-                    <span class="tag">Ekki fyrir róbota</span>
-                </div>
-                <div class="verd">299.999.999.499.990 kr</div>
-                <a class="vorutakki" href="sidur/pontun.html">SETJA Í KÖRFU</a>
-            </div>
-
-            <div class="robot">
-                <div class="Robot-mynd">
-                    <img src="../img/Robot.png" alt="Robot Mynd">
-                </div>
-                <div class="vinarlegur-vinnurobot">Vinalegur vinnuróbot</div>
-                <div class="tags">
-                    <span class="tag">Nýtt</span>
-                    <span class="tag">Ekki fyrir börn</span>
-                </div>
-                <div class="verd">1.499.990 kr.</div>
-                <a class="vorutakki" href="sidur/pontun.html">SETJA Í KÖRFU</a>
-            </div>
-
-            <div class="modurbord">
-                <div class="Robot-mynd">
-                    <img src="../img/Motherboard.png" alt="Modurbord Mynd">
-                </div>
-                <div class="vinarlegur-vinnurobot">Tæknilegt Móðurborð</div>
-                <div class="tags">
-                    <span class="tag">Nýtt</span>
-                    <span class="tag">Takmarkað Magn</span>
-                </div>
-                <div class="verd">189.000 kr</div>
-                <a class="vorutakki" href="sidur/pontun.html">SETJA Í KÖRFU</a>
-            </div>
-
-            <div class="robot">
-                <div class="Robot-mynd">
-                    <img src="../img/Robot.png" alt="Robot Mynd">
-                </div>
-                <div class="vinarlegur-vinnurobot">Vinalegur vinnuróbot</div>
-                <div class="tags">
-                    <span class="tag">Nýtt</span>
-                    <span class="tag">Ekki fyrir börn</span>
-                </div>
-                <div class="verd">1.499.990 kr.</div>
-                <a class="vorutakki" href="sidur/pontun.html">SETJA Í KÖRFU</a>
-            </div>
-
-            <div class="matrix">
-                <div class="Robot-mynd">
-                    <img src="../img/Matrix.png" alt="Matrix Mynd">
-                </div>
-                <div class="vinarlegur-vinnurobot">Matrixið</div>
-                <div class="tags">
-                    <span class="tag">Nýtt</span>
-                    <span class="tag">Ekki fyrir róbota</span>
-                </div>
-                <div class="verd">299.999.999.499.990 kr</div>
-                <a class="vorutakki" href="sidur/pontun.html">SETJA Í KÖRFU</a>
-            </div>
-
-            <div class="robot">
-                <div class="Robot-mynd">
-                    <img src="../img/Robot.png" alt="Robot Mynd">
-                </div>
-                <div class="vinarlegur-vinnurobot">Vinalegur vinnuróbot</div>
-                <div class="tags">
-                    <span class="tag">Nýtt</span>
-                    <span class="tag">Ekki fyrir börn</span>
-                </div>
-                <div class="verd">1.499.990 kr.</div>
-                <a class="vorutakki" href="sidur/pontun.html">SETJA Í KÖRFU</a>
-            </div>
-
-            <div class="robot">
-                <div class="Robot-mynd">
-                    <img src="../img/Robot.png" alt="Robot Mynd">
-                </div>
-                <div class="vinarlegur-vinnurobot">Vinalegur vinnuróbot</div>
-                <div class="tags">
-                    <span class="tag">Nýtt</span>
-                    <span class="tag">Ekki fyrir börn</span>
-                </div>
-                <div class="verd">1.499.990 kr.</div>
-                <a class="vorutakki" href="sidur/pontun.html">SETJA Í KÖRFU</a>
-            </div>
-
-            <div class="modurbord">
-                <div class="Robot-mynd">
-                    <img src="../img/Motherboard.png" alt="Modurbord Mynd">
-                </div>
-                <div class="vinarlegur-vinnurobot">Tæknilegt Móðurborð</div>
-                <div class="tags">
-                    <span class="tag">Nýtt</span>
-                    <span class="tag">Takmarkað Magn</span>
-                </div>
-                <div class="verd">189.000 kr</div>
-                <a class="vorutakki" href="sidur/pontun.html">SETJA Í KÖRFU</a>
-            </div>
-
-            <div class="robot">
-                <div class="Robot-mynd">
-                    <img src="../img/Robot.png" alt="Robot Mynd">
-                </div>
-                <div class="vinarlegur-vinnurobot">Vinalegur vinnuróbot</div>
-                <div class="tags">
-                    <span class="tag">Nýtt</span>
-                    <span class="tag">Ekki fyrir börn</span>
-                </div>
-                <div class="verd">1.499.990 kr.</div>
-                <a class="vorutakki" href="sidur/pontun.html">SETJA Í KÖRFU</a>
-            </div>
-
-            <div class="matrix">
-                <div class="Robot-mynd">
-                    <img src="../img/Matrix.png" alt="Matrix Mynd">
-                </div>
-                <div class="vinarlegur-vinnurobot">Matrixið</div>
-                <div class="tags">
-                    <span class="tag">Nýtt</span>
-                    <span class="tag">Ekki fyrir róbota</span>
-                </div>
-                <div class="verd">299.999.999.499.990 kr</div>
-                <a class="vorutakki" href="sidur/pontun.html">SETJA Í KÖRFU</a>
-            </div>
-            </section>
-
-
+        </section>
     </main>
-    <footer>
-    </p>
-    <section>
-      <h2>Opnunar Timi</h2>
-      <ul>
-        <li>Opið alla virka daga frá 9:00–18:00</li>
-        <li>Opið á laugardögum frá 12:00–16:00</li>
-        <li>Lokað á sunnudögum</li>
-      </ul>
-    </section>
-    <section>
-      <h2>Hafðu Samband</h2>
-      <ul>
-        <li>Skiptiborð: 234–4568</li>
-        <li>Tölvupóstur: thjonusta@example.org</li>
-      </ul>
-    </section>
-    <section>
-        <h2>Annað</h2>
-        <ul>
-          <li>Rekja sendingu</li>
-          <li>Skilaréttur</li>
-          <li>Um okkur</li>
-          <li>Störf</li>
-         
-          </li>
-        </ul>
-      </section>
 
-      <div class="copyright">
-        <p>© 2021 TÆKNIBÚÐIN — Allur réttur áskilinn</p>
-      </div>
-</footer>
+    <script src="/scripts/vorulisti.js"></script>
 </body>
 </html>
