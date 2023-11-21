@@ -17,13 +17,13 @@ fetch("https://vef1-2023-h2-api-791d754dda5b.herokuapp.com/products")
 
       // Create the HTML for each product, making the image and title clickable links
       gridItem.innerHTML = `
-        <a href="product-detail.html?id=${item.id}"> <!-- Adjust the href to match your routing -->
-          <img src="${item.image}" alt="${item.title}" />
-          <h3>${item.title}</h3>
-        </a>
-        <p>Price: ${item.price} kr-</p>
-        <p>Category: ${item.category_title}</p>
-      `;
+      <a href="vorur.html?id=${item.id}">
+        <img src="${item.image}" alt="${item.title}" />
+        <h3>${item.title}</h3>
+      </a>
+      <p>Price: ${item.price} kr-</p>
+      <p>Category: ${item.category_title}</p>
+    `;
 
       // Append the new grid item to the container
       gridContainer.appendChild(gridItem);
