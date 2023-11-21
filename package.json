@@ -8,8 +8,9 @@
     "watch:sass": "sass --watch styles/config.scss styles.css",
     "browser-sync": "browser-sync start --server --files 'sidur/*.html, *.css'",
     "lint:style": "stylelint 'styles/**/*.scss'",
-    "dev": "concurrently 'npm run watch:sass' 'npm run browser-sync'",
+    "dev": "concurrently \"npm run watch:sass\" \"npm run browser-sync\"",
     "test": "echo \"Error: no test specified\" && exit 1"
+    
   },
   "repository": {
     "type": "git",
@@ -22,7 +23,7 @@
     "concurrently": "^8.2.2",
     "cross-env": "^7.0.3",
     "install": "^0.13.0",
-    "npm": "^10.2.1",
+    "npm": "^10.2.4",
     "sass": "^1.69.4",
     "stylelint": "^15.11.0"
   }
