@@ -3,36 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Details - Vefforritunarbúðin</title>
+    <title>Vörulisti - Vefforritunarbúðin</title>
     <link rel="stylesheet" type="text/css" href="/styles.css">
 </head>
 <body>
 
     <header class="header">
-        <div class="title">Vefforritunarbúðin</div>
-        <div class="buttons">
-            <button class="button" href="/index.html">Heimasida</button>
-            <button class="button"></>Nýskrá</button>
-            <button class="button">Innskrá</button>
-            <button class="button">Karfa</button>
-            <button class="button">Nýjar vörur</button>
-            <button class="button">Flokkar</button>
-        </div> 
+        <div class="title" onclick="location.href='/index.html';" style="cursor:pointer;">Vefforritunarbúðin</div>
+        <!-- Additional header content like search, categories, etc. -->
+            <div class="buttons">
+                <button class="button">Nýskrá</button>
+                <button class="button">Innskrá</button>
+                <button class="button">Karfa</button>
+                <button class="button">Nýjar vörur</button>
+                <button class="button">Flokkar</button>
+            </div> 
+        </header>
     </header>
 
     <main>
-        <section id="product-detail">
-            <!-- Product details will be added here dynamically -->
-        </section>
-
-        <section id="similar-products">
-            <h2>Sambærilegar Vörur</h2>
-            <div id="similar-products-grid">
-                <!-- Similar products will be added here -->
-            </div>
-        </section>
+        <h1>Allar Vörur</h1>
+         <!-- Search Form -->
+         <div id="search-container">
+            <input type="text" id="search-input" placeholder="Leita að vöru..." />
+            <button id="search-button">Leita</button>
+        </div>
+        <div id="grid-container">
+            <!-- Products will be added here by the vorulisti.js script -->
+        </div>
+        <a href="/index.html" class="back-to-home">Til baka á forsíðu</a>
     </main>
-
     <script src="/scripts/vorulisti.js"></script>
 </body>
 </html>
