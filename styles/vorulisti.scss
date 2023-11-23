@@ -1,12 +1,12 @@
 /* Add this to your styles.css or within a <style> tag in your HTML */
 #search-container {
   display: flex; /* Aligns the search input and button side by side */
-  justify-content: center; /* Centers the search bar in the container */
-  margin: 20px 0; /* Adds some space above and below the search bar */
+  justify-content: flex-start; /* Centers the search bar in the container */
+  margin: 20px 20px 20px 20px; /* Adds some space above and below the search bar */
 }
 
 #search-input {
-  width: 70%; /* Adjust as needed */
+  width: 43%; /* Adjust as needed */
   padding: 10px;
   border: 1px solid #ccc; /* Light grey border */
   border-right: none; /* Removes the right border where the button will be */
