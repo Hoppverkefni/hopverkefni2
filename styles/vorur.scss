@@ -1,15 +1,82 @@
-.product-card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  width: 30%; /* Or any other width */
-  margin: 16px;
-  display: inline-block; /* To display products side by side */
-}
+#product-detail {
+  display: flex;
+  align-items: start;
+  gap: 20px; // Adjust the gap as needed
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 10px;
+  margin-bottom: 20px;
 
-.product-card img {
-  width: 100%; /* Makes image take full width of the card */
-}
+  .product-image {
+    flex: 0 1 200px; // Adjust the flex ratio as needed
+    flex-basis: 200px;
+    
 
-.product-card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    img {
+      width: 100%;
+      max-width: 100px; // Adjust maximum width as needed
+      height: auto;
+      border-radius: 8px;
+    }
+  }
+
+  .product-info {
+    flex: 2; // Adjust the flex ratio as needed
+
+    h3 {
+      color: #1a1a1a;
+      font-size: 1.5em;
+      margin-top: 0;
+    }
+
+    p {
+      color: #222222;
+      font-size: 1em;
+      line-height: 1.4;
+
+      &:first-of-type {
+        margin-top: 0;
+      }
+    }
+  }
+}
+#similar-products {
+  margin-left: 30px;
+  margin: 20px;
+  margin: 60px;
+}
+#similar-products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); // 3 equal columns
+  gap: 50px; // Space between grid items
+
+  div { // Each grid item
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #c0c0c0; // Example border styling
+    border-radius: 1px; // Optional: if you want rounded corners
+    padding: 15px; // Optional: to give some space between the border and content
+    background-color: #FFF; // Optional: background color for the grid item
+    margin-bottom: 50px;
+
+    img {
+      width: 100%; // Adjust as needed
+      max-width: 400px; // Maximum width of image
+      height: 333px;
+      margin-bottom: 10px;
+      margin-top: 30px;
+    }
+
+    h4 {
+      font-size: 1.1em;
+      margin-bottom: 5px;
+    }
+
+    p {
+      font-size: 1em;
+      color: #171717;
+    }
+  }
 }
