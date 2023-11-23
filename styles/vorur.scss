@@ -80,3 +80,34 @@
     }
   }
 }
+@media (max-width: 768px) { // Adjust the breakpoint as needed
+  #product-detail {
+    flex-direction: column;
+    align-items: center;
+
+    .product-image {
+      flex-basis: auto;
+      max-width: 100%; // Image takes full width
+
+      img {
+        max-width: 100%; // Adjust image max-width for smaller screens
+      }
+    }
+
+    .product-info {
+      flex: none; // Remove the flex ratio for smaller screens
+      width: 100%; // Full width for product info
+    }
+  }
+}
+@media (max-width: 768px) { // Adjust the breakpoint as needed
+  #similar-products-grid {
+    grid-template-columns: repeat(2, 1fr); // 2 columns for medium screens
+  }
+}
+
+@media (max-width: 480px) { // For very small screens
+  #similar-products-grid {
+    grid-template-columns: 1fr; // 1 column for small screens
+  }
+}
