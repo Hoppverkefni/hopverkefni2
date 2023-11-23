@@ -1,0 +1,65 @@
+.header {
+  background-color: rgb(53, 52, 52); /* Dark blue background */
+  color: white;
+  display: flex;
+  justify-content: space-between; /* Space out title and buttons */
+  align-items: center; /* Center items vertically */
+  padding: 20px; /* Add some padding */
+}
+
+.title {
+  font-size: 24px; /* Large font size for the title */
+  font-weight: bold; /* Make the title bold */
+}
+
+.button {
+  background-color: rgb(80, 79, 79); /* Remove any background color */
+  border: none; /* Remove borders */
+  color: white; /* Text color */
+  font-size: 16px; /* Adjust the font size as needed */
+  margin: 0 10px; /* Add space between buttons */
+  padding: 10px 20px; /* Padding inside the buttons */
+  cursor: pointer; /* Change mouse cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.button:hover {
+  background-color: #34495e; /* Slightly lighter blue on hover */
+}
+
+/* Additional styles for responsiveness, if needed */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+  .buttons {
+    margin-top: 10px;
+  }
+}
+
+
+.threebyfour {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px;
+  padding-bottom: 75px;
+}
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  width: 100%;
+  height: 100%;
+  grid-auto-rows: minmax(200px, auto);
+}
+.box {
+  border: 1px solid   #000000;
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+}
