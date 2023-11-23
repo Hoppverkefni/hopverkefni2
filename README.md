@@ -1,8 +1,9 @@
 # hopverkefni2
 
 Charles and Ragnarok
+[NETLIFY](https://crispbacon.netlify.app/)
 
-[Verkefnalýsing](https://github.com/vefforritun/vef1-2023-h2)
+---
 
 # Vefforritun 1, 2023, hópverkefni 2
 
