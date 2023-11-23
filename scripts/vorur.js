@@ -5,11 +5,13 @@ function fetchProductDetails(productId) {
     .then(product => {
       const detailSection = document.getElementById("product-detail");
       detailSection.innerHTML = `
-        <img src="${product.image}" alt="${product.title}" style="width:100%;">
+        <img src="${product.image}" alt="${product.title}">
+        <div class="product-info">
         <h3>${product.title}</h3>
         <p>Price: ${product.price} kr-</p>
         <p>Category: ${product.category_title}</p>
         <p>${product.description}</p>
+        </div>
       `;
 
       // Assuming 'product.category_title' is the correct category identifier
