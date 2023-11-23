@@ -162,12 +162,12 @@ a:hover {
 /* Add this to your styles.css or within a <style> tag in your HTML */
 #search-container {
   display: flex; /* Aligns the search input and button side by side */
-  justify-content: center; /* Centers the search bar in the container */
-  margin: 20px 0; /* Adds some space above and below the search bar */
+  justify-content: flex-start; /* Centers the search bar in the container */
+  margin: 20px 20px 20px 20px; /* Adds some space above and below the search bar */
 }
 
 #search-input {
-  width: 70%; /* Adjust as needed */
+  width: 43%; /* Adjust as needed */
   padding: 10px;
   border: 1px solid #ccc; /* Light grey border */
   border-right: none; /* Removes the right border where the button will be */
@@ -288,6 +288,34 @@ a:hover {
 #similar-products-grid div p {
   font-size: 1em;
   color: #171717;
+}
+
+@media (max-width: 768px) {
+  #product-detail {
+    flex-direction: column;
+    align-items: center;
+  }
+  #product-detail .product-image {
+    flex-basis: auto;
+    max-width: 100%;
+  }
+  #product-detail .product-image img {
+    max-width: 100%;
+  }
+  #product-detail .product-info {
+    flex: none;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  #similar-products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  #similar-products-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
