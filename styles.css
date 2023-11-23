@@ -186,6 +186,63 @@ a:hover {
   background-color: #edecec;
 }
 
+/* Add this to your styles.css or within a <style> tag in your HTML */
+#search-container {
+  display: flex; /* Aligns the search input and button side by side */
+  justify-content: center; /* Centers the search bar in the container */
+  margin: 20px 0; /* Adds some space above and below the search bar */
+}
+
+#search-input {
+  width: 70%; /* Adjust as needed */
+  padding: 10px;
+  border: 1px solid #ccc; /* Light grey border */
+  border-right: none; /* Removes the right border where the button will be */
+  font-size: 16px; /* Larger font size for better readability */
+  outline: none; /* Removes the focus outline */
+}
+
+#search-button {
+  padding: 10px 20px;
+  background-color: #f2f2f2; /* Light grey background */
+  color: #333; /* Dark grey text */
+  border: 1px solid #ccc; /* Light grey border */
+  font-size: 16px;
+  cursor: pointer; /* Changes the cursor to indicate the button is clickable */
+  outline: none; /* Removes the focus outline */
+}
+
+#search-button:hover {
+  background-color: #e9e9e9; /* Slightly darker grey on hover */
+}
+
+/* Removes the blue outline on focus for input and button */
+#search-input:focus,
+#search-button:focus {
+  outline: none !important;
+}
+
+/* Further styling for the search button to remove default browser styles if needed */
+#search-button:active {
+  box-shadow: none; /* Removes any box shadows */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  #search-container {
+    flex-direction: column; /* Stacks input and button vertically */
+    align-items: stretch; /* Stretches items to full width */
+  }
+  #search-input,
+  #search-button {
+    width: auto; /* Allows the input and button to fill the container */
+    border-radius: 0; /* Optional: removes the border-radius for a square look */
+  }
+  #search-button {
+    border-top: none; /* Removes the top border where it meets the input */
+  }
+}
+/* Ensures no extra space on the sides on mobile */
 .product-card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
