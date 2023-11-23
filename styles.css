@@ -66,19 +66,30 @@ a:hover {
   font-weight: bold; /* Make the title bold */
 }
 
-.button {
-  background-color: rgb(80, 79, 79); /* Remove any background color */
+.button, .buttonlol {
+  background-color: rgb(56, 56, 56); /* Remove any background color */
   border: none; /* Remove borders */
   color: white; /* Text color */
   font-size: 16px; /* Adjust the font size as needed */
-  margin: 0 10px; /* Add space between buttons */
+  margin: 10px; /* Add space between buttons */
   padding: 10px 20px; /* Padding inside the buttons */
   cursor: pointer; /* Change mouse cursor on hover */
   transition: background-color 0.3s; /* Smooth transition for hover effect */
 }
 
-.button:hover {
-  background-color: #34495e; /* Slightly lighter blue on hover */
+.buttonlol {
+  margin: 25px;
+  width: 250px;
+}
+
+.button:hover, .buttonlol:hover {
+  background-color: #141414; /* Slightly lighter blue on hover */
+}
+
+.black {
+  font-size: 25px;
+  font: bold;
+  margin-left: 24px;
 }
 
 /* Additional styles for responsiveness, if needed */
@@ -116,6 +127,13 @@ a:hover {
   justify-content: center;
   align-items: center;
   font-size: 60px;
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+.box:hover {
+  background-color: #edecec;
 }
 
 .product-card {
