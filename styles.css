@@ -6,6 +6,16 @@ body {
   height: 100%; /* Ensure full height */
 }
 
+a {
+  color: inherit; /* This will make the link color the same as the text around it, remove if you want a specific color */
+  text-decoration: none; /* Removes the underline */
+}
+
+/* To change the color on hover and maintain no underline */
+a:hover {
+  text-decoration: none;
+}
+
 #grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Creates 3 columns */
