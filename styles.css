@@ -1,0 +1,293 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%; /* Ensure full width */
+  height: 100%; /* Ensure full height */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+a {
+  color: inherit; /* This will make the link color the same as the text around it, remove if you want a specific color */
+  text-decoration: none; /* Removes the underline */
+}
+
+/* To change the color on hover and maintain no underline */
+a:hover {
+  text-decoration: none;
+}
+
+#grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  margin: 20px;
+}
+
+.grid-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  margin-top: 40px;
+}
+
+.category-item {
+  border: 1px solid #ccc;
+  padding: 16px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.category-item:hover {
+  transform: translateY(-5px);
+}
+
+.category-item h2 {
+  margin: 8px 0;
+}
+
+@media (max-width: 768px) {
+  #grid-container, .categories-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  #grid-container, .categories-grid {
+    grid-template-columns: 1fr;
+  }
+  .grid-item img {
+    height: 200px;
+  }
+  .category-item {
+    padding: 10px;
+    font-size: 0.9em;
+  }
+}
+.header {
+  background-color: rgb(53, 52, 52); /* Dark blue background */
+  color: white;
+  display: flex;
+  justify-content: space-between; /* Space out title and buttons */
+  align-items: center; /* Center items vertically */
+  padding: 20px; /* Add some padding */
+}
+
+.title {
+  font-size: 24px; /* Large font size for the title */
+  font-weight: bold; /* Make the title bold */
+}
+
+.button, .buttonlol {
+  background-color: rgb(56, 56, 56); /* Remove any background color */
+  border: none; /* Remove borders */
+  color: white; /* Text color */
+  font-size: 16px; /* Adjust the font size as needed */
+  margin: 10px; /* Add space between buttons */
+  padding: 10px 20px; /* Padding inside the buttons */
+  cursor: pointer; /* Change mouse cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.buttonlol {
+  margin: 25px;
+  width: 250px;
+}
+
+.button:hover, .buttonlol:hover {
+  background-color: #141414; /* Slightly lighter blue on hover */
+}
+
+.black {
+  font-size: 25px;
+  font: bold;
+  margin-left: 24px;
+}
+
+/* Additional styles for responsiveness, if needed */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+  .buttons {
+    margin-top: 10px;
+  }
+}
+.threebyfour {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px;
+  padding-bottom: 75px;
+}
+
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  width: 100%;
+  height: 100%;
+  grid-auto-rows: minmax(200px, auto);
+}
+
+.box {
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+.box:hover {
+  background-color: #edecec;
+}
+
+/* Add this to your styles.css or within a <style> tag in your HTML */
+#search-container {
+  display: flex; /* Aligns the search input and button side by side */
+  justify-content: center; /* Centers the search bar in the container */
+  margin: 20px 0; /* Adds some space above and below the search bar */
+}
+
+#search-input {
+  width: 70%; /* Adjust as needed */
+  padding: 10px;
+  border: 1px solid #ccc; /* Light grey border */
+  border-right: none; /* Removes the right border where the button will be */
+  font-size: 16px; /* Larger font size for better readability */
+  outline: none; /* Removes the focus outline */
+}
+
+#search-button {
+  padding: 10px 20px;
+  background-color: #f2f2f2; /* Light grey background */
+  color: #333; /* Dark grey text */
+  border: 1px solid #ccc; /* Light grey border */
+  font-size: 16px;
+  cursor: pointer; /* Changes the cursor to indicate the button is clickable */
+  outline: none; /* Removes the focus outline */
+}
+
+#search-button:hover {
+  background-color: #e9e9e9; /* Slightly darker grey on hover */
+}
+
+/* Removes the blue outline on focus for input and button */
+#search-input:focus,
+#search-button:focus {
+  outline: none !important;
+}
+
+/* Further styling for the search button to remove default browser styles if needed */
+#search-button:active {
+  box-shadow: none; /* Removes any box shadows */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  #search-container {
+    flex-direction: column; /* Stacks input and button vertically */
+    align-items: stretch; /* Stretches items to full width */
+  }
+  #search-input,
+  #search-button {
+    width: auto; /* Allows the input and button to fill the container */
+    border-radius: 0; /* Optional: removes the border-radius for a square look */
+  }
+  #search-button {
+    border-top: none; /* Removes the top border where it meets the input */
+  }
+}
+/* Ensures no extra space on the sides on mobile */
+#product-detail {
+  display: flex;
+  align-items: start;
+  gap: 20px;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+#product-detail .product-image {
+  flex: 0 1 200px;
+  flex-basis: 200px;
+}
+#product-detail .product-image img {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+  border-radius: 8px;
+}
+#product-detail .product-info {
+  flex: 2;
+}
+#product-detail .product-info h3 {
+  color: #1a1a1a;
+  font-size: 1.5em;
+  margin-top: 0;
+}
+#product-detail .product-info p {
+  color: #222222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+#product-detail .product-info p:first-of-type {
+  margin-top: 0;
+}
+
+#similar-products {
+  margin-left: 30px;
+  margin: 20px;
+  margin: 60px;
+}
+
+#similar-products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+#similar-products-grid div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #c0c0c0;
+  border-radius: 1px;
+  padding: 15px;
+  background-color: #FFF;
+  margin-bottom: 50px;
+}
+#similar-products-grid div img {
+  width: 100%;
+  max-width: 400px;
+  height: 333px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+#similar-products-grid div h4 {
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
+#similar-products-grid div p {
+  font-size: 1em;
+  color: #171717;
+}
+
+/*# sourceMappingURL=styles.css.map */
